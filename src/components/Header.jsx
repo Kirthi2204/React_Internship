@@ -1,13 +1,13 @@
-function Header() {
+function Header(props) {
   return (
     <header className="header">
-      <h2 className="logo">Kiruthiga Palani</h2>
+      <h2>{props.title}</h2>
       <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        {props.links.map((link, index) => (
+          <a key={index} href={`#${link.toLowerCase()}`}>
+            {link}
+          </a>
+        ))}
       </nav>
     </header>
   );

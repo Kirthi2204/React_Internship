@@ -5,25 +5,38 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contacts";
 import Footer from "./components/Footer";
-import './App.css';
+import './App.css'
 function App() {
-  const skills = [
-    "React.js",
-    "JavaScript",
-    "HTML & CSS",
-    "Node.js",
-    "MongoDB",
-    "Cybersecurity Basics"
-  ];
-
   return (
     <>
-      <Header />
-      <Hero name="Kiruthiga Palani" tagline="Full-Stack Developer | React.js" />
-      <About />
-      <Skills skills={skills} />
-      <Projects />
+      <Header
+        title="Kirthi P"
+        links={["Home", "About", "Skills", "Projects", "Contact"]}
+      />
+
+      <Hero
+        name="Kirthi P"
+        tagline="Full-Stack Developer | React.js"
+      />
+
+      <About/>
+
+      <Skills
+        skills={[
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React.js",
+          "Node.js",
+          "MongoDB",
+          "Cybersecurity Basics"
+        ]}
+      />
+
+      <Projects/>
+
       <Contact />
+
       <Footer
         linkedin="https://www.linkedin.com/in/kiruthiga-palani-381b37281"
         github="https://github.com/"
