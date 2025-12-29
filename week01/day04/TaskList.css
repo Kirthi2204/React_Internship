@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 450px;
+  text-align: center;
+  padding: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.task-card {
+  border: 1px solid #e9aaaa;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+.completed {
+  background-color: #a6f3b8;
+}
+
+.completed .task-title {
+  color: green;
+  text-decoration: line-through;
+}
+
+.in-progress {
+  background-color: #e6d7a7;
+}
+
+.in-progress .task-title {
+  color: orange;
+}
+
+.pending {
+  background-color: #e9adb2;
+}
+
+.pending .task-title {
+  color: red;
+}
